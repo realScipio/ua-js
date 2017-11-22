@@ -1,7 +1,7 @@
 # ua-js
 Repo to calculate UserAuthority (UA) via follower data within Steem.
 
-### Implementation schema
+### Implementation plan
 1) read all follower transactions, chronologically, from the blockchain
 - for a Proof of Concept (PoC), we will however begin with retrieving data from steemdata.com (MongoDB)
 2) store follower transactions in a temp MongoDB collection: followDB
