@@ -1,0 +1,7 @@
+{
+    "name": "userAuth",
+    "version": "0.1.0",
+    "dependencies": {
+        "mongodb": "^2.2.33"
+    }
+}
