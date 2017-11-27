@@ -1,0 +1,6 @@
+{"_id":{"$oid":"5a1bf8756f2e7a164c36d3bd"},"id":1,"name":"A","followers":["B","C","D","E","F"],"following_count":2}
+{"_id":{"$oid":"5a1bf8756f2e7a164c36d3be"},"id":2,"name":"B","followers":["A"],"following_count":3}
+{"_id":{"$oid":"5a1bf8756f2e7a164c36d3bf"},"id":3,"name":"C","followers":["A","B"],"following_count":1}
+{"_id":{"$oid":"5a1bf8756f2e7a164c36d3c0"},"id":4,"name":"D","followers":["B","E"],"following_count":2}
+{"_id":{"$oid":"5a1bf8756f2e7a164c36d3c1"},"id":5,"name":"E","followers":["D","F"],"following_count":3}
+{"_id":{"$oid":"5a1bf8756f2e7a164c36d3c2"},"id":6,"name":"F","followers":["E"],"following_count":2}
