@@ -32,7 +32,7 @@ async function computeUA() {
 
         await db.collection("uaDB_1").drop();
         await db.collection("uaDB").rename('uaDB_1');
-        cursor = db.collection('uaDB_1').find({});
+        cursor = db.collection('uaDB_1').find({}).sort({id:1});
         while (await cursor.hasNext())
         {
             account = await cursor.next();
@@ -55,7 +55,4 @@ async function computeUA() {
             await db.collection('uaDB').insertOne(account);
         }
     }
-
-
-
 }
