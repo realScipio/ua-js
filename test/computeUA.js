@@ -41,10 +41,10 @@ async function computeUA() {
             var ua = 0;
             for (let follower of followers) {
                 query = await
-                db.collection("uaDB_1").findOne({name: follower}, {ua: 1});
+                db.collection("uaDB_1").findOne({name: follower.name}, {ua: 1});
                 const ua_1 = query.ua;
                 query = await
-                db.collection("testDB").findOne({name: follower}, {following_count: 1});
+                db.collection("testDB").findOne({name: follower.name}, {following_count: 1});
                 const following = query.following_count;
                 ua += ua_1 / following;
             }
